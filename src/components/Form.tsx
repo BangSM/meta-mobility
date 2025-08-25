@@ -64,6 +64,7 @@ const Form = () => {
       <button
         className="flex justify-center btn_gradient_1 w-[107px] h-[36px] border rounded-[29px] text-white text-[10px] font-light leading-[20px] tracking-[-0.1px] px-[25px] items-center"
         type="submit"
+        disabled={loading}
       >
         SUBMIT
       </button>
