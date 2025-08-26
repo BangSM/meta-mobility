@@ -93,7 +93,7 @@ export default function Home() {
             className="absolute top-[-50px] right-[-100px]"
           />
         </section>
-        <section className="flex flex-col items-center gap-[50px] mb-[430px]">
+        <section id="ELI-CONNECTED" className="flex flex-col items-center gap-[50px] mb-[430px]">
           <Image src="/img_section_4.png" alt="img_1" width={678} height={437} />
           <div className="flex flex-col gap-[15px] items-center ">
             <p className="text_gradient_1 text-[40px] font-light leading-[45px] tracking-[-0.1px]">

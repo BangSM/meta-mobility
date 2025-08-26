@@ -6,7 +6,7 @@ const Navi = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
-      const headerOffset = 50 // 헤더 높이(px)
+      const headerOffset = 150 // 헤더 높이(px)
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
       const offsetPosition = elementPosition - headerOffset
 
