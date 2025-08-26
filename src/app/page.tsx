@@ -12,7 +12,9 @@ export default function Home() {
         <section id="home" className="flex gap-[35px] pt-[134px] flex-col items-center  h-[1018px] mb-[80px] ">
           <div className="flex flex-col gap-[50px] items-center">
             <div className="w-[702px] h-[396px] video_1 rounded-[18px] overflow-hidden z-999 ">
-              <video src="/video.mp4" autoPlay muted loop />
+              <video autoPlay muted loop>
+                <source src="/video.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className="flex flex-col gap-[15px] items-center z-999">
               <p className="text_gradient_1 text-[40px] font-light leading-[45px] tracking-[-0.1px]">
@@ -72,7 +74,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="ELI-CARE" className="relative flex items-center gap-[15px] mb-[500px]">
+        <section id="ELI-CARE" className="relative overflow-x-hidden flex items-center gap-[15px] mb-[500px]">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col gap-[35px] pl-[180px]">
               <p className="text-[40px] font-normal leading-[45px] tracking-[-0.1px] whitespace-pre text-white">{`MODULAR.\nSTACKABLE.\nEXPANDABLE.`}</p>

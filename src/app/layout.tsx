@@ -33,10 +33,11 @@ export default function RootLayout({
     <>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=1024" />
       </head>
       <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <main className="min-w-[1024px] max-w-[1920px] mx-auto">{children}</main>
+        <body>
+          <main className="w-[1024px] mx-auto">{children}</main>
         </body>
       </html>
     </>
