@@ -399,7 +399,7 @@ export default function Home() {
                   </div>
                   <div className="relative flex flex-col pt-[15px]">
                     <a
-                      href="https://www.linkedin.com/in/diana-kim-meta/"
+                      href="https://www.linkedin.com/in/jihyun-kim-meta/"
                       target="_blank"
                       className="absolute top-0 right-0"
                     >
