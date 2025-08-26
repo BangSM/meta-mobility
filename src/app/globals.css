@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @font-face {
   font-family: "Omnes";
-  src: url("/fonts/Omnes-Regular.ttf") format("ttf");
+  src: url("/fonts/Omnes Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Omnes";
-  src: url("/fonts/Omnes-Bold.ttf") format("ttf");
+  src: url("/fonts/Omnes Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Omnes";
-  src: url("/fonts/Omnes-Medium.ttf") format("ttf");
+  src: url("/fonts/Omnes Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Omnes";
-  src: url("/fonts/Omnes-Light.ttf") format("ttf");
+  src: url("/fonts/Omnes Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "Omnes";
-  src: url("/fonts/Omnes-SemiBold.ttf") format("ttf");
+  src: url("/fonts/Omnes SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -59,12 +59,45 @@
 }
 
 body {
-  min-width: 1024px;
+  position: relative;
   background: var(--background);
   color: var(--foreground);
   font-family: "Omnes", Arial, Helvetica, sans-serif;
   @apply bg-cover bg-top bg-no-repeat;
   background-image: url("/img_bg.png");
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1018px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1018px;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+main {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    background: url("/img_effect.png") no-repeat center top / contain;
+    z-index: -999;
+  }
 }
 
 button {
@@ -72,10 +105,10 @@ button {
 }
 
 .bg_1 {
-  background-image: url("/effect.png");
+  /* background-image: url("/img_effect.png");
   background-size: contain;
-  background-position: 51% top;
-  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-repeat: no-repeat; */
 }
 
 .bg_2 {
@@ -98,7 +131,10 @@ button {
 .btn_gradient_1 {
   border-radius: 29px;
   border: 0.5px solid #fff;
-  background: linear-gradient(180deg, #fff 0%, #000 100%);
+  background: linear-gradient(180deg, #e6cbff 0%, #512d73 100%);
+  &:hover {
+    background: linear-gradient(180deg, #fff 0%, #000 100%) !important;
+  }
 }
 
 .bg_gradient_5 {
@@ -110,14 +146,4 @@ button {
   border-radius: 18px;
   border: 1px solid #3b0659;
   box-shadow: 0 4px 27.7px 3px #000;
-}
-
-.gradient_footer {
-  display: fixed;
-  bottom: 0;
-  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-  width: 100%;
-  /* height: 1018px; */
-  /* padding-bottom: 20px; */
-  flex-shrink: 0;
 }

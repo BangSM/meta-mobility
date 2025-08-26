@@ -48,7 +48,7 @@ const Form = () => {
           <input
             name="contractNumber"
             type="text"
-            placeholder="Contract Number"
+            placeholder="Contact Number"
             className="w-[313px] bg-white rounded-[21px] border-[0.5] text-center placeholder:text-[#989898] border-white px-[22px] py-[17px] text-black"
           />
         </div>
@@ -56,7 +56,7 @@ const Form = () => {
           <input
             name="message"
             type="text"
-            placeholder="Contract Number"
+            placeholder="Shall we get started?"
             className="w-full h-[179px] bg-white rounded-[21px] border-[0.5] text-center placeholder:text-[#989898] border-white px-[22px] py-[17px] text-black"
           />
         </div>
