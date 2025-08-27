@@ -12,7 +12,7 @@ export default function Home() {
         <section id="home" className="flex gap-[35px] pt-[134px] flex-col items-center  h-[1018px] mb-[80px] ">
           <div className="flex flex-col gap-[50px] items-center">
             <div className="w-[702px] h-[396px] video_1 rounded-[18px] overflow-hidden z-999 ">
-              <video autoPlay muted loop>
+              <video autoPlay muted loop playsInline webkit-playsinline="true">
                 <source src="/video.mp4" type="video/mp4" />
               </video>
             </div>
